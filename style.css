@@ -1,0 +1,220 @@
+/* איפוס בסיסי */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* עיצוב כללי */
+html {
+  direction: rtl;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Heebo', 'Arial', sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  line-height: 1.8;
+}
+
+/* סרגל עליון */
+.top-bar {
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 12px 24px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.container {
+  width: 90%;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.flex-space {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links a {
+  color: #222;
+  margin: 0 14px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #28a745;
+  border-bottom: 2px solid #28a745;
+}
+
+.logo img {
+  height: 65px;
+}
+
+/* אזור הרואו */
+.hero {
+  position: relative;
+  background: url('https://images.unsplash.com/photo-1609116840646-7ecb81b0134c') no-repeat center center/cover;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.55);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-content {
+  position: relative;
+  color: #fff;
+  text-align: center;
+  z-index: 2;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.hero-content p {
+  font-size: 1.6rem;
+  margin-bottom: 30px;
+}
+
+.small-text {
+  font-size: 1.2rem;
+  color: #e0e0e0;
+}
+
+/* כפתורים */
+.register-btn, .donate-btn {
+  background: linear-gradient(90deg, #28a745, #218838);
+  color: #fff;
+  padding: 15px 40px;
+  font-size: 1.4rem;
+  border: none;
+  border-radius: 50px;
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.4s ease, background 0.4s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.register-btn:hover, .donate-btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(90deg, #218838, #28a745);
+}
+
+/* מקטע כללי */
+.section {
+  padding: 100px 0;
+  background: #fff;
+  text-align: center;
+  animation: fadeInUp 1s ease forwards;
+}
+
+.section.bg-light {
+  background: #f8f9fa;
+}
+
+.section h2 {
+  font-size: 2.8rem;
+  color: #28a745;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.section h2::after {
+  content: '';
+  width: 80px;
+  height: 4px;
+  background: #28a745;
+  display: block;
+  margin: 15px auto 0;
+  border-radius: 2px;
+}
+
+.section p {
+  font-size: 1.3rem;
+  color: #555;
+  margin-top: 20px;
+}
+
+/* תמונות זיכרון וגלריה */
+.memory-photo {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* רשימת פרויקטים */
+.projects-list {
+  list-style: none;
+  margin-top: 30px;
+  padding: 0;
+}
+
+.projects-list li {
+  background: #fff;
+  padding: 15px 20px;
+  margin: 10px 0;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.projects-list li:hover {
+  transform: translateY(-5px);
+}
+
+/* פוטר */
+.footer {
+  background: #222;
+  color: #ccc;
+  padding: 30px 0;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.footer p {
+  margin: 0;
+}
+
+/* אנימציות */
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

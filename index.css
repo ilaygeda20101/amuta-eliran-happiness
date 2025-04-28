@@ -1,0 +1,11 @@
+body {
+    font-family: 'Heebo', 'Arial', sans-serif;
+    background-image: url('/images/backrom.png'); /* תמונה במקום צבע */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    color: #333;
+    line-height: 1.8;
+}

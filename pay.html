@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>תרומות לעמותה</title>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/logo2.png">
+    <style>
+        /* איפוס בסיסי */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            direction: rtl;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Heebo', 'Arial', sans-serif;
+            background: #f0f2f5;
+            color: #333;
+            line-height: 1.8;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* סרגל עליון */
+        .top-bar {
+            background: #fff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 12px 24px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1300px;
+            margin: auto;
+        }
+
+        .flex-space {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: #222;
+            margin: 0 14px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            text-decoration: none;
+            transition: color 0.3s ease, border-bottom 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #28a745;
+            border-bottom: 2px solid #28a745;
+        }
+
+        .logo img {
+            height: 65px;
+        }
+
+        /* תוכן עמוד */
+        .main-content {
+            flex: 1;
+            padding: 80px 20px;
+            background: #fff;
+            text-align: center;
+            animation: fadeInUp 1s ease forwards;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #28a745;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.4rem;
+            color: #555;
+            margin-bottom: 40px;
+        }
+
+        .donate-btn {
+            background: linear-gradient(90deg, #28a745, #218838);
+            color: #fff;
+            padding: 15px 40px;
+            font-size: 1.4rem;
+            border: none;
+            border-radius: 50px;
+            text-decoration: none;
+            display: inline-block;
+            transition: transform 0.4s ease, background 0.4s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+        }
+
+        .donate-btn:hover {
+            transform: scale(1.05);
+            background: linear-gradient(90deg, #218838, #28a745);
+        }
+
+        /* פוטר */
+        footer {
+            background: #222;
+            color: #ccc;
+            padding: 30px 0;
+            text-align: center;
+            font-size: 0.95rem;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* אנימציות */
+        @keyframes fadeInUp {
+            0% {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="top-bar">
+        <div class="container flex-space">
+            <nav class="nav-links">
+                <a href="about.html">מי אנחנו</a>
+                <a href="projects.html">פרויקטים</a>
+                <a href="join.html">הצטרפות</a>
+                <a href="memory.html">זכרון</a>
+                <a href="contact.html">צור קשר</a>
+                <a href="pay.html">תרומות</a>
+            </nav>
+            <div class="logo">
+                <img src="images/logo.png" alt="לוגו שמחת אלירן">
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <h1>תרומות לעמותה</h1>
+        <p>בואו לקחת חלק ולהשפיע יחד איתנו!</p>
+        <a href="https://pay.tranzila.com/fxpeliran40" target="_blank" class="donate-btn">
+            ✨ לתרומה עכשיו ✨
+        </a>
+    </main>
+
+    <footer>
+        <p>© כל הזכויות שמורות לעמותת שמחת אלירן 2025</p>
+    </footer>
+
+</body>
+</html>
